@@ -317,6 +317,8 @@ Overview of alternative open source front-ends for popular internet platforms (e
 
 - [Hackers](https://github.com/weiran/Hackers): a native iOS app for Hacker News
   - Available to download on the Apple AppStore: https://apps.apple.com/us/app/hackers-for-hacker-news/id603503901
+  
+- [Glider](https://github.com/Mosc/Glider): Glider is an opinionated Hacker News client for Android. Ad-free, open-source, no-nonsense.
 
 ### Other services
 
