@@ -14,14 +14,20 @@ Overview of alternative open source front-ends for popular internet platforms (e
 - [TikTok](#tiktok)
 - [Imgur](#imgur)
 - [Spotify](#spotify)
+- [Apple Music](#apple-music)
+- [Twitch](#twitch)
 - [Discord](#discord)
-- [Medium](#medium)
 - [Google Search](#google-search)
 - [Google Translate](#google-translate)
 - [Facebook](#facebook)
+- [Facebook Messenger](#facebook-messenger)
+- [Mastodon](#mastodon)
+- [Medium](#medium)
 - [Reuters](#reuters)
 - [Apple AirPlay](#apple-airplay)
+- [Shazam](#shazam)
 - [Hacker News](#hacker-news)
+- [Telegram](#telegram)
 - [Other services](#other-services)
 - [Redirection](#redirection)
 - [Related projects](#related-projects)
@@ -46,6 +52,8 @@ Overview of alternative open source front-ends for popular internet platforms (e
   - Official instance: [https://tube.cadence.moe](https://tube.cadence.moe)
   - Installation guide for self-hosting: https://git.sr.ht/~cadence/tube-docs/tree/main/item/docs/cloudtube/Installing%20CloudTube.md
 
+- [YouTube.js](https://github.com/LuanRT/YouTube.js): Full-featured wrapper around the Innertube API, which is what YouTube itself uses
+
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube): Open source YouTube desktop player for privacy on Windows, Mac and Linux
 
 - [Invuedious](https://github.com/bocchilorenzo/invuedious): An alternative frontend for invidious built with vue.js
@@ -61,7 +69,7 @@ Overview of alternative open source front-ends for popular internet platforms (e
 
 - [Youtube-dl](https://github.com/ytdl-org/youtube-dl): Command-line program to download videos from YouTube.com and other video sites
 
-- [Youtube-dl-gui](https://github.com/jely2002/youtube-dl-gui): A cross-platform GUI for youtube-dl made in Electron and node.js
+- [OpenVideoDownloader aka jely2002/youtube-dl-gui](https://github.com/jely2002/youtube-dl-gui): A cross-platform GUI for youtube-dl made in Electron and node.js
 
 - [ytdl-gui](https://github.com/JaGoLi/ytdl-gui): A simple-to-use, cross-platform graphical interface for youtube-dl
 
@@ -110,6 +118,12 @@ Overview of alternative open source front-ends for popular internet platforms (e
 - [yattee](https://github.com/yattee/yattee): Alternative YouTube frontend for iOS, tvOS and macOS built with Invidious and Piped, supports sponsorblock
 
 - [ytcast](https://github.com/MarcoLucidi01/ytcast): Cast YouTube videos to your smart TV from the command line. This program does roughly the same thing as the "Play on TV" button that appears on the player bar when you visit youtube.com with Chrome or when you use the YouTube smartphone app
+
+- [LibreTube](https://github.com/libre-tube/LibreTube): Android frontend for YouTube, based on Piped
+
+- [BlackHole](https://github.com/Sangwan5688/BlackHole): Android music player app for YouTube Music and Spotify made with Flutter
+
+- [oleksis/youtube-dl-gui](https://github.com/oleksis/youtube-dl-gui): Cross-platform front-end GUI of the popular youtube-dl written in wxPython
 
 ### YouTube Music
 
@@ -223,9 +237,14 @@ Overview of alternative open source front-ends for popular internet platforms (e
 
 - [Omgur](https://git.geraldwu.com/gerald/omgur): `[Proxy]` Omgur is a free and open-source alternative Imgur front-end focused on privacy. Inspired by the Invidious, Nitter, and Teddit projects.
   - No JavaScript or ads
-  - All requests go through the backend, client never talks to Imgur
+  - All requests go through the Omgur backend, client never talks to Imgur
   - Prevents Imgur from tracking your IP or JavaScript fingerprint
   - Lightweight
+  - Self-hostable
+  - Mirror of the original repository on Github: https://github.com/geraldwuhoo/omgur
+
+- [imgrs](https://git.geraldwu.com/gerald/imgrs): Imgrs is a free and open-source alternative Imgur front-end focused on privacy. It's a Rust rewrite of a previous Imgur proxy project, Omgur.
+  - Mirror of the original repository on Github: https://github.com/geraldwuhoo/imgrs
 
 ### Spotify
 
@@ -235,22 +254,33 @@ Overview of alternative open source front-ends for popular internet platforms (e
 
 - [spot](https://github.com/xou816/spot): Gtk/Rust native Spotify client for the GNOME desktop. Only works with premium accounts
 
-- [spotube](https://github.com/KRTirtho/spotube): A lightweight free Spotify headphones desktop-client desktop_computer which handles playback manually, streams music using Youtube & no Spotify premium account is needed scream
+- [spotube](https://github.com/KRTirtho/spotube): A lightweight and free Spotify crossplatform-client which handles playback manually, streams music using Youtube & no Spotify premium account is needed
 
-- [SpotX](https://github.com/amd64fox/SpotX): Windows Only - Blocking ads and updates for the desktop version of Spotify, disabling podcasts and more. 
+- [SpotX](https://github.com/amd64fox/SpotX): Modified Spotify Client for Windows (Windows Only) - Blocking ads and updates for the desktop version of Spotify, disabling podcasts and more
 
-- [kotify](https://github.com/dzirbel/kotify): Requires Spotify Account - Multiplatform desktop client for Spotify focused on library organization for power users. Relies on official Spotify client for playback.
+- [kotify](https://github.com/dzirbel/kotify): Requires Spotify Account - Multiplatform desktop client for Spotify focused on library organization for power users. Relies on official Spotify client for playback
 
-- [librespot](https://github.com/librespot-org/librespot): Requires Spotify Premium Account - librespot is an open source client library for Spotify. It enables applications to use Spotify's service to control and play music via various backends, and to act as a Spotify Connect receiver. It is an alternative to the official and now deprecated closed-source libspotify. Additionally, it will provide extra features which are not available in the official library.
+- [librespot](https://github.com/librespot-org/librespot): Requires Spotify Premium Account - librespot is an open source client library for Spotify. It enables applications to use Spotify's service to control and play music via various backends, and to act as a Spotify Connect receiver. It is an alternative to the official and now deprecated closed-source libspotify. Additionally, it will provide extra features which are not available in the official library
+
+- [oggify](https://github.com/pisto/oggify): Download Spotify tracks to Ogg Vorbis (with a Spotify premium account), based on librespot
+
+### Apple Music
+
+- [Cider](https://github.com/ciderapp/Cider): Cross-platform Apple Music experience based on Electron and Vue.js written from scratch with performance in mind
+
+### Twitch
+
+- [streamlink-twitch-gui](https://github.com/streamlink/streamlink-twitch-gui): Multi platform Twitch.tv browser for Streamlink
+
+- [Twire](https://github.com/twireapp/Twire): Alternative and open source Twitch client for Android
+
+- [Xtra](https://github.com/crackededed/Xtra): Twitch player and browser for Android
+
+- [ElectronPlayer](https://github.com/oscartbeaumont/ElectronPlayer): Electron Based Web Video Services Player. Supports Netflix, Youtube, Twitch, Floatplane, Hulu and more
 
 ### Discord
 
-- [gtkcord3](https://github.com/diamondburned/gtkcord3): A lightweight Discord client written in Golang which uses GTK3 for the user interface
-
-### Medium
-
-- [Scribe](https://sr.ht/~edwardloveall/scribe): Alternative front-end to Medium.com
-  - Official website: https://scribe.rip
+- [gtkcord4](https://github.com/diamondburned/gtkcord4): A lightweight Discord client written in Golang which uses GTK3 for the user interface
 
 ### Google Search
 
@@ -260,8 +290,10 @@ Overview of alternative open source front-ends for popular internet platforms (e
 - [Searx](https://github.com/searx/searx): Searx is a free privacy-respecting internet metasearch engine which aggregates results from more than 70 search services. Users are neither tracked nor profiled. Additionally, searx can be used over Tor for online anonymity
   - Public instances: https://searx.space
 
-- [SearXNG](https://github.com/searxng/searxng): SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled
-  - SearXNG is a fork of searx
+- [SearXNG](https://github.com/searxng/searxng): SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled (SearXNG is a fork of searx)
+
+- [LibreX](https://github.com/hnhx/librex): Privacy respecting free meta search engine (free as in freedom)
+  - Small and simple meta search engine, fetches and anonymizes results from Google only, has API support, allows redirects to Invidious/ Bibliogram/ Nitter/ Libreddit
 
 ### Google Translate
 
@@ -282,17 +314,44 @@ Overview of alternative open source front-ends for popular internet platforms (e
 - [DeepL Android](https://github.com/sakusaku3939/DeepLAndroid): Unofficial Android client for DeepL
   - Available on [F-Droid](https://f-droid.org/en/packages/com.example.deeplviewer)
 
-### Facebook
+- [Crow Translate](https://github.com/crow-translate/crow-translate): Simple and lightweight cross-platform translator that allows translation using LibreTranslate, Lingva, Google, Bing, and Yandex, as well as text-to-speech using Google
 
-- [Fb-messenger-cli](https://github.com/Alex-Rose/fb-messenger-cli): Use Facebook Messenger from command line
+### Facebook
 
 - [SlimSocial](https://github.com/rignaneseleo/SlimSocial-for-Facebook): Android, alternative front-end for Facebook, built with Java
 
 - [Frost](https://github.com/AllanWang/Frost-for-Facebook): An extensive and functional third party app for Facebook (Android app)
 
+### Facebook Messenger
+
+- [fb-messenger-cli](https://github.com/Alex-Rose/fb-messenger-cli): Use your Facebook account to chat with your friends sneakily in the command line, it's as easy as logging in, choosing a convo and chatting away
+
+- [Caprine](https://github.com/sindresorhus/caprine): Unofficial and privacy-focused Facebook Messenger app with many useful features
+
+### Mastodon
+
+- [Pinafore](https://github.com/nolanlawson/pinafore): Alternative web client for Mastodon, focused on speed and simplicity
+
+- [Sengi](https://github.com/NicolasConstant/sengi): cross-platform multi-account Mastodon & Pleroma desktop client
+
+- [TheDesk](https://github.com/cutls/TheDesk): cross-platform Mastodon & Misskey desktop client
+
+- [Tootle](https://github.com/bleakgrey/tootle): simple GTK-based Linux Mastodon client
+
+- [Tusky](https://github.com/tuskyapp/Tusky): lightweight Android Mastodon client
+
+- [Fedilab](https://framagit.org/tom79/fedilab): multi-account Android Mastodon client
+
+- [Hyperspace](https://github.com/hyperspacedev/hyperspace): cross-platform Mastodon client for the fediverse written in TypeScript and React
+
+### Medium
+
+- [Scribe](https://sr.ht/~edwardloveall/scribe): Alternative front-end to Medium.com
+  - Official website: https://scribe.rip
+
 ### Reuters
 
-- [HookedBehemoth/supreme-waffle](https://github.com/HookedBehemoth/supreme-waffle): An alternative front-end to Reuters.com. It is intented to be lightweight and fast and was heavily inspired by Nitter
+- [Neuters](https://github.com/HookedBehemoth/neuters): An alternative front-end to Reuters.com. It is intented to be lightweight and fast, and was heavily inspired by Nitter
   - Official instance: https://boxcat.site
 
 ### Apple AirPlay
@@ -300,6 +359,14 @@ Overview of alternative open source front-ends for popular internet platforms (e
 - [RPiPlay](https://github.com/FD-/RPiPlay): An open-source AirPlay mirroring server for the Raspberry Pi. Supports iOS 9 and up.
 
 - [air-pi-play](https://github.com/rahul-thakoor/air-pi-play): Turn a Raspberry Pi into an Airplay server using RPiPlay to enable screen mirroring on tvs, monitors and projectors.
+
+### Shazam
+
+- [SongRec](https://github.com/marin-m/SongRec): Open-source Shazam client for Linux, written in Rust
+
+### Telegram
+
+- [Telegram-FOSS](https://github.com/Telegram-FOSS-Team/Telegram-FOSS): Unofficial, FOSS-friendly fork of the original Telegram client for Android
 
 ### Hacker News
 
@@ -343,6 +410,9 @@ Overview of alternative open source front-ends for popular internet platforms (e
 
 - [Wikiless](https://codeberg.org/orenom/wikiless): A free open source alternative Wikipedia front-end focused on privacy
 
+- [Librarian](https://codeberg.org/librarian/librarian): Alternative frontend for LBRY / Odysee.com
+  - Official instance: https://librarian.bcow.xyz
+
 ## Redirection
 
 - [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect): A simple web extension that redirects Twitter, YouTube, Instagram & Google Maps requests to privacy friendly alternatives
@@ -367,13 +437,14 @@ Overview of alternative open source front-ends for popular internet platforms (e
 
 - [Pluja's Awesome Privacy](https://github.com/pluja/awesome-privacy): A curated list of services and alternatives that respect your privacy because privacy matters.
 
-- [Outline.com](https://outline.com): Outline is a free service for reading and annotating news articles.
-  - Note: The source code of Outline.com is not available under a free/open-source license.
+- [12ft.io / 12ft Ladder](https://12ft.io): 12ft Ladder is a free service for reading news articles. Prepend 12ft.io/ to the URL of any paywalled page, and we'll try our best to remove the paywall and get you access to the article. It is similar to Outline.com which is not available anymore.
+  - Note: The source code of 12ft Ladder is not available under a free/open-source license.
 
 - [Youtube Vanced](https://github.com/YTVanced): Youtube replacement app for the Android platform: YouTube Vanced is the stock Android YouTube app, but better. It includes adblocking, true amoled dark mode and a lot more. Use the Vanced Manager to install YouTube Vanced with ease.
   - Official website with install instructions: https://vancedapp.com
   - Note: The source code of Youtube Vanced is not available under a free/open-source license.
   - For an explanation about the origin of Youtube Vanced see here: https://old.reddit.com/r/Vanced/comments/o3xm9m/if_youtube_vanced_isnt_open_source_and_doesnt/h2ec7wf/
+  - Vanced was forced to shut down by Google due to legal reasons. The project https://github.com/ReVancedTeam tries to continue its legacy
 
 ## About this repository
 
